@@ -1,0 +1,72 @@
+.moviecard{
+    width: 200px;
+    height: 330px;
+    border-radius: 6px;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    background-color:#242222;
+    color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease;
+    position: relative;
+}
+.moviecard:hover{
+    border-color: transparent;
+    border-bottom-color: #fb9415;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+.moviecard img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius:5px 5px ;
+    transition: 0.3s ease;
+    font-size: 0rem;
+    
+}
+
+
+.moviecard .rating{
+    position: absolute;
+    padding: 0 4px;
+    color: black !important;
+    border-radius: 2px;
+    background-color: #fb9415;
+    font-size: 0.85rem;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating>span{
+    color: black !important;
+}
+
+.moviecard .title{
+    padding: 3px 3px;
+    margin-bottom: 0;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 500;
+    font-size: 16px;
+}
+.moviecard .title.titlesmall{
+    font-size: 0.75rem;
+    padding: 3px 3px;
+
+}
+.smaller{
+    font-family: 'Noto Sans', sans-serif !important;
+    display: flex;
+    color: rgba(244, 244, 244, 0.799);
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 3px 3px;
+    margin-top: -5px;
+    text-transform: capitalize;
+}
+.moviecard .rating .star{
+    margin-top: -5px;
+}
